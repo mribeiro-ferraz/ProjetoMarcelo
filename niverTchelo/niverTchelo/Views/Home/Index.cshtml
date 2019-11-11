@@ -1,0 +1,413 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Aniversário Tchelo 50tão</title>
+
+</head>
+
+<body>
+
+    <div class="pb-20 pt-4">
+        <!-- INICIO - INTRODUÇÃO -->
+        <div class="content">
+            <div class="container-fluid col-md-12">
+                <div class="row ">
+                    <div class=" container col-md-11">
+                        <div class="card col-md-12">
+                            <div class="card-header card-header-info">
+                                <h3 class="card-title">Aniversário Marcelo Vecchio</h3>
+                                <p class="card-category">50 anos</p>
+                            </div>
+                            <div class="card-body">
+                                <!-- <h1 class="container" align="center">What is Lorem Ipsum? </h1><br> -->
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to
+                                    make a type .
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FOTOS CARROSSEL -->
+        <div class="title pb-8" align="center" id="fotos">
+            <br>
+            <span class="titulo">Fotos</span><br>
+
+        </div>
+
+        <div id="fotosTheloCarrossel" class="container carousel slide data-ride col-md-10 pb-10">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block col-md-12 img-carrossel" src="~/img/cave.jpg" alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block col-md-12 img-carrossel" src="~/img/cave2.jpg"
+                         alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block col-md-12 img-carrossel" src="~/img/cave3.jpg"
+                         width="100" alt="Terceiro Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#fotosTheloCarrossel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#fotosTheloCarrossel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+        <!-- PRESENTES -->
+        <div class="title pb-8" align="center">
+            <br>
+            <span class="titulo">Lista de Presentes</span><br>
+
+        </div>
+        <div class="row container" id="presentes">
+            <div class="col-md-4">
+                <div class="card card-chart">
+                    <div class="card-header card-header-info">
+                        <div class="ct-chart" align="center" id="websiteViewsChart">
+                            <img src="~/img/ps4.png" height="200">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Playstation 4</h4>
+                        <!-- <div class="row">
+                      <p class="card-category">R$</p>
+                      <p style="font-size: 20px">50,</p>
+                      <p class="card-category">00</p>
+
+                    </div> -->
+                        <p class="valor-presente">
+                            <span class="presente-rs">R$</span>
+                            <span class="presente-real">50,</span>
+                            <span class="presente-centavo">00</span>
+                        </p>
+
+                    </div>
+
+                    <div align="center" style="margin-bottom: 20px">
+                        <div class="stats">
+                            <!-- MATHEUS TESTE MODAL -->
+                            <!-- <a href="https://pag.ae/7Vh2_e2xQ/button" target="_blank"
+                          title="Pague com PagSeguro - é rápido, grátis e seguro!">
+                          <button class="btn btn-light" style="font-size: 15px">
+                            Presentear
+                          </button>
+                        </a> -->
+                            <button class="btn btn-light" style="font-size: 13px" data-toggle="modal"
+                                    data-target="#loginModal">
+                                Presentear
+                            </button>
+
+                            <div class="modal fade pt-10" id="loginModal" tabindex="-1">
+                                <div class="modal-dialog modal-login" role="document">
+                                    <div class="modal-content">
+                                        <div class="card card-signup card-plain">
+                                            <div class="modal-header">
+                                                <div class="card-header card-header-info text-center">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                        <i class="material-icons">clear</i>
+                                                    </button>
+
+                                                    <h4 class="card-title" style="color: #fff; float: left">
+                                                        Playstation
+                                                        4
+                                                    </h4><br>
+                                                    <div class="social-line">
+                                                        <div class="ct-chart" align="center">
+                                                            <img src="~/img/ps4.png" height="200">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="textos-pagamento" method="" action="">
+                                                    <h5 class="description text-center">
+                                                        Você selecionou o [PRESENTE] para presentear o Tchelo!
+                                                    </h5>
+                                                    <div class="card-body">
+                                                        <p class="description text-center">
+                                                            Clicando no botão abaixo, você será redirecionado para o
+                                                            site do PagSeguro, onde será possível selecionar a melhor
+                                                            forma de pagamento para você poder presentear o Tchelo!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- DESCOMENTAR DEPOIS -->
+                                            <!-- INICIO DO BOTAO PAGSEGURO -->
+                                            <!-- <a href="https://pag.ae/7Vh3ZZ69s/button" target="_blank" title="Pagar com PagSeguro"><img src="https://assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar-preto.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a> -->
+                                            <!-- FIM DO BOTAO PAGSEGURO -->
+                                            <!-- INICIO DO BOTAO PAGSEGURO -->
+                                            <a href="javascript:void(0)"
+                                               onclick="PagSeguroLightbox('386CBC8B7171A23AA465AF83CF652F1C'); return false;">
+                                                <img src="https://assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar-preto.gif"
+                                                     alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                                            </a>
+
+                                            <!-- FIM DO BOTAO PAGSEGURO -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-chart">
+                    <div class="card-header card-header-info">
+                        <div class="ct-chart" align="center" id="websiteViewsChart">
+                            <img src="~/img/iphone.png" height="200">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">iPhone X Cinza Espacial 64GB</h4>
+                        <p class="valor-presente">
+                            <span class="presente-rs">R$</span>
+                            <span class="presente-real">100,</span>
+                            <span class="presente-centavo">00</span>
+                        </p>
+                    </div>
+                    <div align="center" style="margin-bottom: 20px">
+                        <div class="stats">
+                            <!-- INICIO DO BOTAO PAGSEGURO -->
+                            <a href="https://pag.ae/7Vh2_e2xQ/button" target="_blank"
+                               title="Pague com PagSeguro - é rápido, grátis e seguro!">
+                                <button class="btn btn-light" style="font-size: 13px">
+                                    Presentear
+                                </button>
+                            </a>
+                            <!-- FIM DO BOTAO PAGSEGURO -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-chart">
+                    <div class="card-header card-header-info">
+                        <div class="ct-chart" align="center" id="websiteViewsChart">
+                            <img src="~/img/livro_hp.jpg" height="200">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Livro Harry Potter e o Cálice de Fogo</h4>
+                        <p class="valor-presente">
+                            <span class="presente-rs">R$</span>
+                            <span class="presente-real">200,</span>
+                            <span class="presente-centavo">00</span>
+                        </p>
+                    </div>
+                    <div align="center" style="margin-bottom: 20px">
+                        <div class="stats">
+                            <!-- INICIO DO BOTAO PAGSEGURO -->
+                            <a href="https://pag.ae/7Vh2_e2xQ/button" target="_blank"
+                               title="Pague com PagSeguro - é rápido, grátis e seguro!">
+                                <button class="btn btn-light" style="font-size: 13px">
+                                    Presentear
+                                </button>
+                            </a>
+                            <!-- FIM DO BOTAO PAGSEGURO -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row container" id="presentes">
+            <div class="col-md-4">
+                <div class="card card-chart">
+                    <div class="card-header card-header-info">
+                        <div class="ct-chart" align="center" id="websiteViewsChart">
+                            <img src="~/img/ps4.png" height="200">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Playstation 4</h4>
+                        <!-- <div class="row">
+                      <p class="card-category">R$</p>
+                      <p style="font-size: 20px">50,</p>
+                      <p class="card-category">00</p>
+
+                    </div> -->
+                        <p class="valor-presente">
+                            <span class="presente-rs">R$</span>
+                            <span class="presente-real">50,</span>
+                            <span class="presente-centavo">00</span>
+                        </p>
+
+                    </div>
+
+                    <div align="center" style="margin-bottom: 20px">
+                        <div class="stats">
+                            <!-- MATHEUS TESTE MODAL -->
+                            <!-- <a href="https://pag.ae/7Vh2_e2xQ/button" target="_blank"
+                          title="Pague com PagSeguro - é rápido, grátis e seguro!">
+                          <button class="btn btn-light" style="font-size: 15px">
+                            Presentear
+                          </button>
+                        </a> -->
+                            <button class="btn btn-light" style="font-size: 13px" data-toggle="modal"
+                                    data-target="#loginModal">
+                                Presentear
+                            </button>
+
+                            <div class="modal fade pt-10" id="loginModal" tabindex="-1">
+                                <div class="modal-dialog modal-login" role="document">
+                                    <div class="modal-content">
+                                        <div class="card card-signup card-plain">
+                                            <div class="modal-header">
+                                                <div class="card-header card-header-info text-center">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                        <i class="material-icons">clear</i>
+                                                    </button>
+
+                                                    <h4 class="card-title" style="color: #fff; float: left">
+                                                        Playstation
+                                                        4
+                                                    </h4><br>
+                                                    <div class="social-line">
+                                                        <div class="ct-chart" align="center">
+                                                            <img src="~/img/ps4.png" height="200">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="textos-pagamento" method="" action="">
+                                                    <h5 class="description text-center">
+                                                        Você selecionou o [PRESENTE] para presentear o Tchelo!
+                                                    </h5>
+                                                    <div class="card-body">
+                                                        <p class="description text-center">
+                                                            Clicando no botão abaixo, você será redirecionado para o
+                                                            site do PagSeguro, onde será possível selecionar a melhor
+                                                            forma de pagamento para você poder presentear o Tchelo!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- DESCOMENTAR DEPOIS -->
+                                            <!-- INICIO DO BOTAO PAGSEGURO -->
+                                            <!-- <a href="https://pag.ae/7Vh3ZZ69s/button" target="_blank" title="Pagar com PagSeguro"><img src="https://assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar-preto.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a> -->
+                                            <!-- FIM DO BOTAO PAGSEGURO -->
+                                            <!-- INICIO DO BOTAO PAGSEGURO -->
+                                            <a href="javascript:void(0)"
+                                               onclick="PagSeguroLightbox('386CBC8B7171A23AA465AF83CF652F1C'); return false;">
+                                                <img src="https://assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar-preto.gif"
+                                                     alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                                            </a>
+
+                                            <!-- FIM DO BOTAO PAGSEGURO -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-chart">
+                    <div class="card-header card-header-info">
+                        <div class="ct-chart" align="center" id="websiteViewsChart">
+                            <img src="~/img/iphone.png" height="200">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">iPhone X Cinza Espacial 64GB</h4>
+                        <p class="valor-presente">
+                            <span class="presente-rs">R$</span>
+                            <span class="presente-real">100,</span>
+                            <span class="presente-centavo">00</span>
+                        </p>
+                    </div>
+                    <div align="center" style="margin-bottom: 20px">
+                        <div class="stats">
+                            <!-- INICIO DO BOTAO PAGSEGURO -->
+                            <a href="https://pag.ae/7Vh2_e2xQ/button" target="_blank"
+                               title="Pague com PagSeguro - é rápido, grátis e seguro!">
+                                <button class="btn btn-light" style="font-size: 13px">
+                                    Presentear
+                                </button>
+                            </a>
+                            <!-- FIM DO BOTAO PAGSEGURO -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-chart">
+                    <div class="card-header card-header-info">
+                        <div class="ct-chart" align="center" id="websiteViewsChart">
+                            <img src="~/img/livro_hp.jpg" height="200">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Livro Harry Potter e o Cálice de Fogo</h4>
+                        <p class="valor-presente">
+                            <span class="presente-rs">R$</span>
+                            <span class="presente-real">200,</span>
+                            <span class="presente-centavo">00</span>
+                        </p>
+                    </div>
+                    <div align="center" style="margin-bottom: 20px">
+                        <div class="stats">
+                            <!-- INICIO DO BOTAO PAGSEGURO -->
+                            <a href="https://pag.ae/7Vh2_e2xQ/button" target="_blank"
+                               title="Pague com PagSeguro - é rápido, grátis e seguro!">
+                                <button class="btn btn-light" style="font-size: 13px">
+                                    Presentear
+                                </button>
+                            </a>
+                            <!-- FIM DO BOTAO PAGSEGURO -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- GOOGLE MAPS -->
+
+        <div class="title pt-8" align="center" id="mapa">
+            <br>
+            <span class="titulo">Local da Festa</span><br>
+
+        </div>
+        <div class="container col-md-10" id="map"></div>
+
+
+        <!-- Voltar ao topo -->
+        <a href="#top" class="topo"></a>
+    </div>
+
+    <!-- MÚSICA -->
+    <embed src="~/musica/planta-e-raiz.mp3" loop="2" autostart="10" /> 
+</body>
+
+</html>

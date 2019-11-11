@@ -1,0 +1,39 @@
+﻿@model IEnumerable<niverTchelo.Models.Convidados>
+
+@{
+    ViewData["Title"] = "Lista de Convidados";
+}
+
+<div class="pt-6">
+    <div class="card container col-md-10 col-sm-10 col-lg-10">
+        <div class="card-header card-header-info">
+            <h4 class="card-title ">Lista de Convidados</h4>
+            <p class="card-category" style="float: right; ">Total Confirmados: @Model.Count() </p>
+            @*<p class="card-category">Confirmados</p>*@
+        </div>
+        <div class="card-body col-md-12 col-sm-12 col-lg-12">
+            <div class="table-responsive">
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                            <th>@Html.DisplayNameFor(model => model.Cpf)</th>
+                            <th class="text-center">@Html.DisplayNameFor(model => model.Mensagem)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var convidados in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(model => convidados.Nome)</td>
+                                <td>@Html.DisplayFor(model => convidados.Cpf)</td>
+                                <td>@Html.DisplayFor(model => convidados.Mensagem)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
